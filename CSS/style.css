@@ -1,28 +1,36 @@
 :root {
-  --primary-color: #6c63ff;
-  --secondary-color: #f5f2fe;
+  --primary-color: #698474;
+  --secondary-color: #eeedbe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 body {
-  margin: 60px auto !important;
+  margin: 56px auto !important;
+  background-color: #ffd3b6 !important;
 }
 
-h1,
-h2,
-h3 {
-  margin: 0;
+h1 {
+  font-size: 120px !important;
 }
 
-h1,
-.contact-title {
-  font-size: 48px !important;
+h2 {
+  font-size: 90px !important;
 }
 
-h2,
-.about-title {
-  font-size: 96px !important;
-  margin-top: 60px;
+.summary {
+  font-size: 30px !important;
+  color: #fcf8f3;
+}
+
+.welcome {
+  font-family: 'Pacifico', cursive;
+  color: #ffaaa5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0 5px white, 0 0 15px white, 0 0 25px white,
+    0 0 35px white, 0 0 50px #fcf8f3, 0 0 75px #fcf8f3, 0 0 100px #fcf8f3,
+    0 0 150px #fcf8f3;
 }
 
 h3 {
@@ -94,21 +102,25 @@ p {
   text-decoration: underline;
 }
 
-@media (max-width: 600px) {
-  h1,
-.contact-title  {
-    font-size: 32px !important;
+.about-titles {
+  font-size: 30px !important;
+  margin-top: 80px;
+}
+
+@media (max-width: 576px) {
+  h1{
+    font-size: 52px !important;
   }
   h2,
-.about-title {
-    font-size: 48px !important;
+  .about-titles {
+    font-size: 24px !important;
   }
   h4 {
     font-size: 24px !important;
     text-align: center;
   }
-  p{
-      text-align: center;
+  p {
+    text-align: center;
   }
   .not-important {
     display: none;

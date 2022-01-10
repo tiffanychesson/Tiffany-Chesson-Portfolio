@@ -2,28 +2,32 @@
   --primary-color: #698474;
   --secondary-color: #eeedbe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --heading-font: 'Pacifico', cursive;
 }
 
 body {
-  margin: 56px auto !important;
-  background-color: #ffd3b6 !important;
+  background-color: var(--secondary-color);
 }
 
 h1 {
   font-size: 120px !important;
+  font-family: var(--heading-font);
 }
 
 h2 {
-  font-size: 90px !important;
-}
-
-.summary {
   font-size: 30px !important;
   color: #fcf8f3;
 }
 
+h3{
+  color: var(--primary-color);
+}
+.hero{
+  margin: 56px auto !important;
+  background-color: #ffd3b6;
+}
+
 .welcome {
-  font-family: 'Pacifico', cursive;
   color: #ffaaa5;
   display: flex;
   justify-content: center;
@@ -33,31 +37,14 @@ h2 {
     0 0 150px #fcf8f3;
 }
 
-h3 {
-  font-size: 24px !important;
-  opacity: 0.7;
-}
-
-h4 {
-  font-size: 48px !important;
-}
-
-p {
-  border-radius: 4px;
-  font-size: 18px;
-  line-height: 1.5;
-}
-
 .navigation-links {
   display: flex;
   margin-top: 40px;
   justify-content: center;
 }
 
-.navigation-links a {
+a {
   margin: 20px;
-  border-radius: 4px;
-  padding: 20px 15px;
   text-decoration: none;
   text-transform: capitalize;
 }
@@ -73,61 +60,22 @@ p {
 .secondary-link {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  padding: 20px 15px;
 }
 
-.homepage-link {
-  color: var(--primary-color);
-  text-align: center;
+.say-hello{
   display: block;
-}
-
-.about-paragraphs {
-  display: flex;
-  margin: 30px 40px;
-}
-
-.about-paragraphs p {
-  margin: 10px;
-}
-
-.email-link {
-  display: flex;
-  justify-content: center;
-  color: var(--primary-color);
-  font-size: 28px;
-  text-decoration: none;
-}
-
-.email-link:hover {
-  text-decoration: underline;
-}
-
-.about-titles {
-  font-size: 30px !important;
-  margin-top: 80px;
 }
 
 @media (max-width: 576px) {
   h1{
-    font-size: 52px !important;
+    font-size: 72px !important;
   }
-  h2,
-  .about-titles {
-    font-size: 24px !important;
+  h2 {
+    font-size: 22px !important;
   }
-  h4 {
-    font-size: 24px !important;
-    text-align: center;
-  }
-  p {
-    text-align: center;
-  }
-  .not-important {
-    display: none;
-  }
-  .more-work-link {
-    display: block;
-    text-align: center;
-    margin: 0 auto;
+  h3{
+    font-size: 20px !important;
   }
 }

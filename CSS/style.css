@@ -124,8 +124,8 @@ a {
   display: block;
 }
 
-.about-me-section{
-  margin-top: 80px;
+.content{
+  margin-top: 10px;
 }
 
 .subheader{
@@ -177,6 +177,7 @@ a:hover{
 @media (max-width: 812px) {
   h1 {
     font-size: 72px !important;
+    text-align: center;
   }
   h2 {
     font-size: 22px !important;

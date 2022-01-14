@@ -136,6 +136,10 @@ footer a:hover {
   color: #698474 !important;
 }
 
+.contact-page a{
+  color: #ffaaa5;
+}
+
 .learn-more {
   border-style: solid;
   border-color: #ffaaa5;
@@ -204,6 +208,10 @@ footer a:hover {
   border-radius: 4px;
 }
 
+.social-links a:hover{
+  color: #698474 !important;
+}
+
 .col {
   justify-content: center;
 }
@@ -229,6 +237,7 @@ a:hover {
   color: #ffaaa5;
 }
 
+
 .learn-more:hover {
   background-color: #ffaaa5;
   color: white !important;
@@ -246,6 +255,7 @@ a:hover {
     font-size: 20px !important;
     text-align: center;
     padding: 0 20px;
+    margin-bottom: 0;
   }
   h4 {
     font-size: 15px !important;
@@ -259,8 +269,9 @@ a:hover {
     font-size: 18px;
     padding: 5px 0;
   }
-  .work-links {
+  .work-links, .social-links {
     justify-content: center;
+    text-align: center;
   }
   .languages i {
     font-size: 24px;
